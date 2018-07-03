@@ -4,6 +4,8 @@ namespace CreateClass
 {
     public enum Genders { Male, Female };
 
+    #region Person class
+
     public class Person
     {
         public string name;
@@ -27,6 +29,10 @@ namespace CreateClass
         }
     }
 
+    #endregion
+
+    #region Room class
+
     public class Room
     {
         public int roomNumber;
@@ -41,6 +47,10 @@ namespace CreateClass
             return $"{roomNumber}";
         }
     }
+
+    #endregion
+
+    #region Employee class
 
     public class Employee : Person
     {
@@ -61,6 +71,8 @@ namespace CreateClass
             return base.ToString() + $" {salary}" + $" {profession}" + $" {room}";
         }
     }
+
+    #endregion
 
     class Program
     {
